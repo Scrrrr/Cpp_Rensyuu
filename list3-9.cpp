@@ -8,12 +8,12 @@ int main(void)
 
     for(step = 1; step <= 9; step++)
     {
-        cout << step << "の段:\t";
+        cout << step << "の段:\t";//printf("%dの段\t",step);
         for(num = 1; num <= 9; num++)
         {
-            cout << (step * num) << '\t';
+            cout << (step * num) << '\t'; //printf("%d\t",step*num);
         }
 
-        cout << endl;
+        cout << endl; //printf("\n");
     }
 }
