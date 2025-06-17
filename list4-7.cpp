@@ -1,23 +1,19 @@
 #include<iostream>
-#include<cmath>
+#include<typeinfo>
+
 using namespace std;
 
-bool quadEq(double a, double b, double c, double *px1, double *px2)
+int main(void)
 {
-    double inRoot;
-    bool ans;
+		cout << "文字リテラルaの型:" << typeid('A').name() << '\n';
+		cout << "文字リテラル1の型:" << typeid(1).name() << '\n';
+		cout << "文字リテラル1.2の型:" << typeid(1.2).name() << '\n';
+		cout << "文字リテラルAhahaの型:" << typeid("hoge").name() << '\n';
+		cout << "文字リテラルあ！の型:" << typeid("あ！").name() << '\n';
+		cout << "文字リテラル💛の型:" << typeid("💛").name() << '\n';
 
-    inRoot = b * b - 4 * a * c;
-    if(inRoot < 0)
-    {
-        ans = false;
-    }
-    else
-    {
-        ans = true;
-        *px1 = (-b + sqrt(inRoot) / (2 * a));
-        *px2 = (-b - sqrt(inRoot) / (2 * a));
-    }
+		cout << "A * 2 = " << 'A' * 2 << '\n';
 
-    return ans;
+
+
 }
